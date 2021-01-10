@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d3664662-b6a7-4313-96d9-a0b770d4d741" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1mnGaXdPzaT7r7BjeddbwpPm9qV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Tests (spice)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/src/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="E2E Tests (spice-e2e)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d3664662-b6a7-4313-96d9-a0b770d4d741" name="Default Changelist" comment="" />
+      <created>1610122005486</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610122005486</updated>
+      <workItem from="1610122006558" duration="10792000" />
+      <workItem from="1610199263823" duration="5884000" />
+      <workItem from="1610216749043" duration="3126000" />
+      <workItem from="1610262204826" duration="324000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1258" height="180" key="GridCell.Tab.0.bottom" timestamp="1610131927802">
+      <screen x="0" y="23" width="1280" height="725" />
+    </state>
+    <state width="1258" height="180" key="GridCell.Tab.0.bottom/0.23.1280.725@0.23.1280.725" timestamp="1610131927802" />
+    <state width="1258" height="180" key="GridCell.Tab.0.center" timestamp="1610131927801">
+      <screen x="0" y="23" width="1280" height="725" />
+    </state>
+    <state width="1258" height="180" key="GridCell.Tab.0.center/0.23.1280.725@0.23.1280.725" timestamp="1610131927801" />
+    <state width="1258" height="180" key="GridCell.Tab.0.left" timestamp="1610131927800">
+      <screen x="0" y="23" width="1280" height="725" />
+    </state>
+    <state width="1258" height="180" key="GridCell.Tab.0.left/0.23.1280.725@0.23.1280.725" timestamp="1610131927800" />
+    <state width="1258" height="180" key="GridCell.Tab.0.right" timestamp="1610131927801">
+      <screen x="0" y="23" width="1280" height="725" />
+    </state>
+    <state width="1258" height="180" key="GridCell.Tab.0.right/0.23.1280.725@0.23.1280.725" timestamp="1610131927801" />
+    <state x="171" y="24" key="SettingsEditor" timestamp="1610122058257">
+      <screen x="0" y="23" width="1280" height="725" />
+    </state>
+    <state x="171" y="24" key="SettingsEditor/0.23.1280.725@0.23.1280.725" timestamp="1610122058257" />
+    <state x="1765" y="224" width="950" height="750" key="find.popup" timestamp="1610207779158">
+      <screen x="1280" y="71" width="1920" height="1057" />
+    </state>
+    <state x="323" y="128" width="633" height="514" key="find.popup/0.23.1280.725@0.23.1280.725" timestamp="1610202081272" />
+    <state x="1765" y="224" width="950" height="750" key="find.popup/1280.71.1920.1057/0.23.1280.725@1280.71.1920.1057" timestamp="1610207779158" />
+    <state x="1738" y="142" width="1005" height="986" key="search.everywhere.popup" timestamp="1610207770050">
+      <screen x="1280" y="71" width="1920" height="1057" />
+    </state>
+    <state x="305" y="72" width="670" height="676" key="search.everywhere.popup/0.23.1280.725@0.23.1280.725" timestamp="1610202085802" />
+    <state x="1738" y="142" width="1005" height="986" key="search.everywhere.popup/1280.71.1920.1057/0.23.1280.725@1280.71.1920.1057" timestamp="1610207770050" />
+  </component>
+</project>

@@ -1,0 +1,32 @@
+[
+    {
+    "propertyId": 1,
+    "propertyName": "2BHk House",
+    "noOfGuest": 3,
+    "bedroom": 4,
+    "beds": 4,
+    "bathRoom": 3,
+    "country": "USA",
+    "state": "NY"
+},
+{
+    "propertyId": 2,
+    "propertyName": "5BHk House",
+    "noOfGuest": 3,
+    "bedroom": 4,
+    "beds": 4,
+    "bathRoom": 3,
+    "country": "USA",
+    "state": "NY"
+},
+{
+    "propertyId": 3,
+    "propertyName": "1BHk House",
+    "noOfGuest": 2,
+    "bedroom": 4,
+    "beds": 4,
+    "bathRoom": 3,
+    "country": "USA",
+    "state": "NY"
+}
+]

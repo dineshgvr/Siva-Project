@@ -1,0 +1,39 @@
+<form [formGroup]="searchFormGroup">
+    <div class="container">
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>North Carolina</mat-label>
+                <input matInput placeholder="Placeholder"  readonly>
+              </mat-form-field>
+        </div>
+          <div>
+            <mat-form-field>
+                <mat-label>Arrived Start Date</mat-label>
+                <input matInput [matDatepicker]="startPicker" required formControlName = "arrivedStartDate">
+                <mat-datepicker-toggle matSuffix [for]="startPicker"></mat-datepicker-toggle>
+                <mat-datepicker #startPicker></mat-datepicker>
+                </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field>
+                <mat-label>Arrived Start Date</mat-label>
+                <input matInput [matDatepicker]="endPicker" required formControlName = "arrivedEndDate">
+                <mat-datepicker-toggle matSuffix [for]="endPicker"></mat-datepicker-toggle>
+                <mat-datepicker #endPicker></mat-datepicker>
+                </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Room Type</mat-label>
+                <mat-select formControlName="roomType">
+                  <mat-option *ngFor="let room of roomTypes" [value]="room">
+                    {{room}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+          </div>
+          <div>
+            <button mat-raised-button (click)="onSubmit()" [disabled]="!searchFormGroup.valid">Submit</button>
+          </div>
+    </div>
+</form>

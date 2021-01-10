@@ -1,0 +1,23 @@
+@media(min-width:1170px){
+    header {
+        height: auto;
+        width:100%;
+        top:0;
+        line-height:0px!important;
+        position: absolute;
+        z-index: 3;
+    }
+    }
+ul.nav-menu {
+    padding: 25px;
+    display: inline-block;
+}
+    .brand-logo {
+        float: left;
+        padding: 10px;
+    }
+@media(min-width:767px){
+    .toggle-nav {
+        display: none;
+    }
+}

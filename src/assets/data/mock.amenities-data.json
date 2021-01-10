@@ -1,0 +1,32 @@
+[
+    {
+    "propertyId": 1,
+    "amenitiesId": 100,
+    "wifi": 3,
+    "iron": 4,
+    "hairDryer": 4,
+    "hangers": 3,
+    "fireExtin": 1212,
+    "firstAidKit": "No"
+},
+{
+    "propertyId": 2,
+    "amenitiesId": 100,
+    "wifi": 3,
+    "iron": 4,
+    "hairDryer": 4,
+    "hangers": 3,
+    "fireExtin": 10023,
+    "firstAidKit": "Yes"
+},
+{
+    "propertyId": 1,
+    "amenitiesId": 100,
+    "wifi": 3,
+    "iron": 4,
+    "hairDryer": 4,
+    "hangers": 3,
+    "fireExtin": 12342,
+    "firstAidKit": "Yes"
+}
+]

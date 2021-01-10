@@ -1,0 +1,15 @@
+[
+    {
+    "propertyId": 1,
+    "roomType": "Private",
+    "roomId": 1,
+    "roomNumber": 201,
+    "NoOfKids": 1,
+    "tenancy": "Shared",
+    "roomRate": 30,
+    "roomSize": 2,
+    "bedBath": 2,
+    "hangers": "Yes",
+    "Shampoo": "Yes"
+}
+]
