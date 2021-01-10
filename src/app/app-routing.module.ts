@@ -5,13 +5,13 @@ import { MainLayoutComponent } from './layout/app-layout/main-layout/main-layout
 import { Routes, RouterModule } from '@angular/router';
 import { AuthGuard } from './core/guard/auth.guard';
 const routes: Routes = [
+  // {
+  //   path: '',
+  //   loadChildren: () =>
+  //     import('./search-dashboard/search-dashboard.module').then((m) => m.SearchDashboardModule),
+  // },
   {
     path: '',
-    loadChildren: () =>
-      import('./search-dashboard/search-dashboard.module').then((m) => m.SearchDashboardModule),
-  },
-  {
-    path: '545',
     component: MainLayoutComponent,
     canActivate: [AuthGuard],
     children: [
