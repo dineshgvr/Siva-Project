@@ -24,7 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d3664662-b6a7-4313-96d9-a0b770d4d741" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +84,9 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d3664662-b6a7-4313-96d9-a0b770d4d741" name="Default Changelist" comment="" />
@@ -96,8 +98,16 @@
       <workItem from="1610199263823" duration="5884000" />
       <workItem from="1610216749043" duration="3126000" />
       <workItem from="1610262204826" duration="915000" />
-      <workItem from="1610263990129" duration="30000" />
+      <workItem from="1610263990129" duration="921000" />
     </task>
+    <task id="LOCAL-00001" summary="Dinesh - Updated RoomsToInn project with running mode">
+      <created>1610264289930</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610264289930</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,11 +125,20 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Dinesh - Updated RoomsToInn project with running mode" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dinesh - Updated RoomsToInn project with running mode" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="1850" y="404" width="673" height="250" key="Github.ShareDialog" timestamp="1610262718265">
+    <state x="1734" y="142" key="CommitChangelistDialog2" timestamp="1610264289561">
       <screen x="1280" y="71" width="1920" height="1057" />
     </state>
-    <state x="1850" y="404" width="673" height="250" key="Github.ShareDialog/1280.71.1920.1057/0.23.1280.725@1280.71.1920.1057" timestamp="1610262718265" />
+    <state x="1734" y="142" key="CommitChangelistDialog2/1280.71.1920.1057/0.23.1280.725@1280.71.1920.1057" timestamp="1610264289561" />
+    <state x="1850" y="388" width="673" height="250" key="Github.ShareDialog" timestamp="1610264903044">
+      <screen x="1280" y="71" width="1920" height="1005" />
+    </state>
+    <state x="1850" y="388" key="Github.ShareDialog/1280.71.1920.1005/0.23.1280.777@1280.71.1920.1005" timestamp="1610264903044" />
+    <state x="1850" y="404" width="673" height="250" key="Github.ShareDialog/1280.71.1920.1057/0.23.1280.725@1280.71.1920.1057" timestamp="1610264729688" />
     <state x="1986" y="274" key="Github.UntrackedFilesDialog" timestamp="1610262724010">
       <screen x="1280" y="71" width="1920" height="1057" />
     </state>
@@ -144,6 +163,10 @@
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state x="171" y="24" key="SettingsEditor/0.23.1280.725@0.23.1280.725" timestamp="1610122058257" />
+    <state x="1840" y="313" key="Vcs.Push.Dialog.v2" timestamp="1610264496240">
+      <screen x="1280" y="71" width="1920" height="1057" />
+    </state>
+    <state x="1840" y="313" key="Vcs.Push.Dialog.v2/1280.71.1920.1057/0.23.1280.725@1280.71.1920.1057" timestamp="1610264496240" />
     <state x="1765" y="224" width="950" height="750" key="find.popup" timestamp="1610207779158">
       <screen x="1280" y="71" width="1920" height="1057" />
     </state>
