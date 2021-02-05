@@ -13,7 +13,7 @@ import { HeaderComponent } from './layout/header/header.component';
 import { PageLoaderComponent } from './layout/page-loader/page-loader.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { RightSidebarComponent } from './layout/right-sidebar/right-sidebar.component';
-import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import {LocationStrategy, HashLocationStrategy, APP_BASE_HREF} from '@angular/common';
 import { fakeBackendProvider } from './core/interceptor/fake-backend';
 import { ErrorInterceptor } from './core/interceptor/error.interceptor';
 import { JwtInterceptor } from './core/interceptor/jwt.interceptor';
@@ -27,6 +27,9 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
 import { SingInService } from './services/signIn/sing-in.service';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { PropertyStepperComponent } from './property-details/components/property-stepper/property-stepper.component';
+import {MatTabsModule} from "@angular/material/tabs";
+import {PropertyDetailsModule} from "./property-details/property-details.module";
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
@@ -41,19 +44,21 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     HeaderComponent,
     PageLoaderComponent,
     SidebarComponent,
-    RightSidebarComponent,
+    RightSidebarComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    AppRoutingModule,
-    HttpClientModule,
-    PerfectScrollbarModule,
-    ClickOutsideModule,
-    CoreModule,
-    SharedModule,
-    FlexLayoutModule
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        AppRoutingModule,
+        HttpClientModule,
+        PerfectScrollbarModule,
+        ClickOutsideModule,
+        CoreModule,
+        SharedModule,
+        FlexLayoutModule,
+        MatTabsModule,
+        PropertyDetailsModule
+    ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy },
     {

@@ -38,9 +38,7 @@
             "styles": [
               "src/assets/scss/style.scss",
               "src/assets/scss/theme/all-themes.scss",
-              "src/styles.scss",
-               "./src/assets/search-ui/css/color1.css",
-               "./src/assets/search-ui/css/bootstrap.css"
+              "src/styles.scss"
             ],
             "scripts": [
               "./node_modules/moment/min/moment.min.js",

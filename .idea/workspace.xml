@@ -22,8 +22,30 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3664662-b6a7-4313-96d9-a0b770d4d741" name="Default Changelist" comment="">
+    <list default="true" id="d3664662-b6a7-4313-96d9-a0b770d4d741" name="Default Changelist" comment="Dinesh - Updated RoomsToInn project with running mode">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/amenities/amenities.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/amenities/amenities.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/amenities/amenities.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/amenities/amenities.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/core/service/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/core/service/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/dashboard/main/main.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/main/main.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout/sidebar/sidebar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout/sidebar/sidebar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout/sidebar/sidebar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/property-details/property-details-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/property-details/property-details-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/property-details/property-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/property-details/property-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/property-details/property-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/property-details/property-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/property-details/property-details.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/property-details/property-details.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/room-details/room-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/room-details/room-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/room-details/room-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/room-details/room-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/amenities/amenities.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/amenities/amenities.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/property-details/property-details.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/property-details/property-details.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/material.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/material.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +71,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/property-details/components" />
+      <recent name="$PROJECT_DIR$/src/app/property-details" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets" />
     </key>
@@ -98,7 +124,21 @@
       <workItem from="1610199263823" duration="5884000" />
       <workItem from="1610216749043" duration="3126000" />
       <workItem from="1610262204826" duration="915000" />
-      <workItem from="1610263990129" duration="921000" />
+      <workItem from="1610263990129" duration="1842000" />
+      <workItem from="1610293517152" duration="969000" />
+      <workItem from="1610347406965" duration="14706000" />
+      <workItem from="1610383573892" duration="2139000" />
+      <workItem from="1610807416058" duration="8046000" />
+      <workItem from="1610854024657" duration="382000" />
+      <workItem from="1610854769697" duration="33000" />
+      <workItem from="1610864865571" duration="599000" />
+      <workItem from="1610880528676" duration="869000" />
+      <workItem from="1610900752115" duration="358000" />
+      <workItem from="1610980353889" duration="53000" />
+      <workItem from="1611341366208" duration="1846000" />
+      <workItem from="1611495122470" duration="253000" />
+      <workItem from="1612026361888" duration="5380000" />
+      <workItem from="1612068548438" duration="51000" />
     </task>
     <task id="LOCAL-00001" summary="Dinesh - Updated RoomsToInn project with running mode">
       <created>1610264289930</created>
@@ -107,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610264289930</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Dinesh - Updated RoomsToInn project with running mode">
+      <created>1610265187655</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610265187655</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,14 +177,16 @@
     <option name="LAST_COMMIT_MESSAGE" value="Dinesh - Updated RoomsToInn project with running mode" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1734" y="142" key="CommitChangelistDialog2" timestamp="1610264289561">
-      <screen x="1280" y="71" width="1920" height="1057" />
+    <state x="1461" y="28" width="1285" height="862" key="CommitChangelistDialog2" timestamp="1612031171953">
+      <screen x="1280" y="-40" width="1920" height="1011" />
     </state>
+    <state x="1461" y="28" key="CommitChangelistDialog2/1280.-40.1920.1011/0.23.1280.777@1280.-40.1920.1011" timestamp="1612031171953" />
+    <state x="1461" y="139" width="1285" height="862" key="CommitChangelistDialog2/1280.71.1920.1005/0.23.1280.777@1280.71.1920.1005" timestamp="1610265187468" />
     <state x="1734" y="142" key="CommitChangelistDialog2/1280.71.1920.1057/0.23.1280.725@1280.71.1920.1057" timestamp="1610264289561" />
-    <state x="1850" y="388" width="673" height="250" key="Github.ShareDialog" timestamp="1610264903044">
+    <state x="1850" y="388" width="963" height="386" key="Github.ShareDialog" timestamp="1610264938528">
       <screen x="1280" y="71" width="1920" height="1005" />
     </state>
-    <state x="1850" y="388" key="Github.ShareDialog/1280.71.1920.1005/0.23.1280.777@1280.71.1920.1005" timestamp="1610264903044" />
+    <state x="1850" y="388" width="963" height="386" key="Github.ShareDialog/1280.71.1920.1005/0.23.1280.777@1280.71.1920.1005" timestamp="1610264938528" />
     <state x="1850" y="404" width="673" height="250" key="Github.ShareDialog/1280.71.1920.1057/0.23.1280.725@1280.71.1920.1057" timestamp="1610264729688" />
     <state x="1986" y="274" key="Github.UntrackedFilesDialog" timestamp="1610262724010">
       <screen x="1280" y="71" width="1920" height="1057" />
@@ -163,19 +212,29 @@
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state x="171" y="24" key="SettingsEditor/0.23.1280.725@0.23.1280.725" timestamp="1610122058257" />
-    <state x="1840" y="313" key="Vcs.Push.Dialog.v2" timestamp="1610264496240">
-      <screen x="1280" y="71" width="1920" height="1057" />
+    <state x="1840" y="301" key="Vcs.Push.Dialog.v2" timestamp="1610265194486">
+      <screen x="1280" y="71" width="1920" height="1005" />
     </state>
+    <state x="1840" y="301" key="Vcs.Push.Dialog.v2/1280.71.1920.1005/0.23.1280.777@1280.71.1920.1005" timestamp="1610265194486" />
     <state x="1840" y="313" key="Vcs.Push.Dialog.v2/1280.71.1920.1057/0.23.1280.725@1280.71.1920.1057" timestamp="1610264496240" />
-    <state x="1765" y="224" width="950" height="750" key="find.popup" timestamp="1610207779158">
-      <screen x="1280" y="71" width="1920" height="1057" />
+    <state x="323" y="126" width="634" height="514" key="find.popup" timestamp="1610815603325">
+      <screen x="0" y="23" width="1280" height="716" />
     </state>
+    <state x="323" y="126" width="634" height="514" key="find.popup/0.23.1280.716@0.23.1280.716" timestamp="1610815603325" />
     <state x="323" y="128" width="633" height="514" key="find.popup/0.23.1280.725@0.23.1280.725" timestamp="1610202081272" />
+    <state x="323" y="131" width="634" height="531" key="find.popup/0.23.1280.748@0.23.1280.748" timestamp="1610384481071" />
     <state x="1765" y="224" width="950" height="750" key="find.popup/1280.71.1920.1057/0.23.1280.725@1280.71.1920.1057" timestamp="1610207779158" />
-    <state x="1738" y="142" width="1005" height="986" key="search.everywhere.popup" timestamp="1610207770050">
-      <screen x="1280" y="71" width="1920" height="1057" />
+    <state x="1991" y="368" key="git4idea.ui.GitUnstashDialog" timestamp="1610265220167">
+      <screen x="1280" y="71" width="1920" height="1005" />
+    </state>
+    <state x="1991" y="368" key="git4idea.ui.GitUnstashDialog/1280.71.1920.1005/0.23.1280.777@1280.71.1920.1005" timestamp="1610265220167" />
+    <state x="1738" y="28" width="1005" height="945" key="search.everywhere.popup" timestamp="1612028348747">
+      <screen x="1280" y="-40" width="1920" height="1011" />
     </state>
     <state x="305" y="72" width="670" height="676" key="search.everywhere.popup/0.23.1280.725@0.23.1280.725" timestamp="1610202085802" />
+    <state x="305" y="73" width="670" height="698" key="search.everywhere.popup/0.23.1280.748@0.23.1280.748" timestamp="1610384583970" />
+    <state x="1738" y="28" width="1005" height="945" key="search.everywhere.popup/1280.-40.1920.1011/0.23.1280.777@1280.-40.1920.1011" timestamp="1612028348747" />
+    <state x="1738" y="31" width="1005" height="987" key="search.everywhere.popup/1280.-40.1920.1057/0.23.1280.742@1280.-40.1920.1057" timestamp="1611341874404" />
     <state x="1738" y="142" width="1005" height="986" key="search.everywhere.popup/1280.71.1920.1057/0.23.1280.725@1280.71.1920.1057" timestamp="1610207770050" />
   </component>
 </project>

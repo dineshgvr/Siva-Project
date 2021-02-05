@@ -14,6 +14,7 @@ import {
   ApexFill,
 } from 'ng-apexcharts';
 import { EChartOption } from 'echarts';
+import { CookieService } from 'ngx-cookie-service';
 
 export type SparklineChartOptions = {
   series: ApexAxisChartSeries;
@@ -212,5 +213,7 @@ export class MainComponent {
   };
 
   // area chart end
-  constructor() {}
+  constructor(private cookiesService: CookieService) {
+    console.log(cookiesService.get('loggedInUserData'));
+  }
 }

@@ -13,12 +13,12 @@ const routes: Routes = [
   {
     path: '',
     component: MainLayoutComponent,
-    canActivate: [AuthGuard],
+    // canActivate: [AuthGuard],
     children: [
-      { path: '', redirectTo: '/authentication/signin', pathMatch: 'full' },
+      // { path: '', redirectTo: '/authentication/signin', pathMatch: 'full' },
       {
         path: 'dashboard',
-        canActivate: [AuthGuard],
+        // canActivate: [AuthGuard],
         loadChildren: () =>
           import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
       },
@@ -34,12 +34,12 @@ const routes: Routes = [
       },
       {
         path: 'roomDetails',
-        loadChildren: () => 
+        loadChildren: () =>
         import('./room-details/room-details.module').then((m) => m.RoomDetailsModule)
       },
       {
         path: 'gallery',
-        loadChildren: () => 
+        loadChildren: () =>
         import('./gallery/gallery.module').then((m) => m.GalleryModule)
       },
       {

@@ -6,6 +6,7 @@ import { DatatableComponent } from '@swimlane/ngx-datatable';
 import { PropertyDetailsService } from '../services/property-details/property-details.service';
 import { SingInService } from '../services/signIn/sing-in.service';
 import {AuthService} from "../core/service/auth.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-property-details',
@@ -50,6 +51,7 @@ export class PropertyDetailsComponent implements OnInit {
   ];
 
   @ViewChild(DatatableComponent, { static: false }) table2: DatatableComponent;
+  showProperty = true;
   constructor(
     private fb: FormBuilder,
     private _snackBar: MatSnackBar,
@@ -57,7 +59,8 @@ export class PropertyDetailsComponent implements OnInit {
     private propertyDetailsService: PropertyDetailsService,
     private signInService: SingInService,
     private formBuilder: FormBuilder,
-    private authService: AuthService
+    private authService: AuthService,
+    private router: Router
   ) {
     this.propertyForm = this.formBuilder.group({
         propertyName : new FormControl('', [Validators.required]),
@@ -106,10 +109,11 @@ export class PropertyDetailsComponent implements OnInit {
     this.selectedRowData = row;
   }
 
-  addRow(content) {
-    this.propertyForm.reset();
-    this.isAddOrView = 'Add';
-    this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' });
+  addRow() {
+    this.router.navigate(['/propertyDetails/property']);
+    // this.propertyForm.reset();
+    // this.isAddOrView = 'Add';
+    // this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' });
   }
 
   deleteRow(row) {

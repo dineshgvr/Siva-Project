@@ -3,6 +3,9 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { DatatableComponent } from '@swimlane/ngx-datatable';
+import {AmenitiesService} from "../services/amenities/amenities.service";
+import {AuthService} from "../core/service/auth.service";
+import {MatCheckbox} from "@angular/material/checkbox";
 
 @Component({
   selector: 'app-amenities',
@@ -11,6 +14,8 @@ import { DatatableComponent } from '@swimlane/ngx-datatable';
 })
 export class AmenitiesComponent implements OnInit {
   public countryList: any[] = ['USA'];
+  public amenitiesForm: FormGroup;
+  public isAddOrEdit: string = "Add";
 
   @ViewChild('roleTemplate', { static: true }) roleTemplate: TemplateRef<any>;
   @ViewChild(DatatableComponent, { static: false }) table: DatatableComponent;
@@ -54,7 +59,10 @@ export class AmenitiesComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private _snackBar: MatSnackBar,
-    private modalService: NgbModal
+    private modalService: NgbModal,
+    private amenitiesService: AmenitiesService,
+    private authService: AuthService,
+    private formBuilder: FormBuilder
   ) {
     this.editForm = this.fb.group({
       id: new FormControl(),
@@ -67,48 +75,28 @@ export class AmenitiesComponent implements OnInit {
     });
   }
   ngOnInit() {
-    this.fetch((data) => {
-      this.data = data;
-      this.filteredData = data;
-      console.log(this.data);
-    });
-    // Table 2
-    this.tb2fetch((data) => {
-      this.tb2data = data;
-      this.tb2filteredData = data;
-    });
-    this.register = this.fb.group({
-      id: [''],
-      img: [''],
-      firstName: ['', [Validators.required, Validators.pattern('[a-zA-Z]+')]],
-      lastName: [''],
-      phone: ['', [Validators.required]],
-      gender: ['', [Validators.required]],
-      email: [
-        '',
-        [Validators.required, Validators.email, Validators.minLength(5)],
-      ],
-      address: [''],
+    this.loadAmenities();
+    this.amenitiesForm = this.formBuilder.group({
+      propertyId: new FormControl(''),
+      propertyName: new FormControl(''),
+      wifi: new FormControl( false),
+      hairDryer: new FormControl(false),
+      iron: new FormControl(false),
+      heating: new FormControl(false),
+      carbonMonoxideAlarm: new FormControl(false),
+      laptopSpace: new FormControl(false),
+      hangers: new FormControl(false),
+      essentials: new FormControl(false),
+      fireExtin: new FormControl(false),
+      firstAidKit: new FormControl(false)
     });
   }
-  fetch(cb) {
-    const req = new XMLHttpRequest();
-    req.open('GET', './assets/data/mock.amenities-data.json');
-    req.onload = () => {
-      const data = JSON.parse(req.response);
-      cb(data);
-    };
-    req.send();
-  }
-  // Table 2
-  tb2fetch(cb) {
-    const req = new XMLHttpRequest();
-    req.open('GET', 'assets/data/ngx-data.json');
-    req.onload = () => {
-      const data = JSON.parse(req.response);
-      cb(data);
-    };
-    req.send();
+
+  loadAmenities(): void {
+    this.amenitiesService.getAmenities(this.authService.currentUserValue.email).subscribe((response: any) => {
+      this.data = response;
+      this.filteredData = response;
+    });
   }
   // Table 2
   tb2filterDatatable(event) {
@@ -135,16 +123,23 @@ export class AmenitiesComponent implements OnInit {
     // whenever the filter changes, always go back to the first page
     this.table2.offset = 0;
   }
+
   editRow(row, rowIndex, content) {
+    this.isAddOrEdit = "Edit";
     this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' });
-    this.editForm.setValue({
-      id: row.id,
-      firstName: row.firstName,
-      lastName: row.lastName,
-      phone: row.phone,
-      email: row.email,
-      address: row.address,
-      img: row.img,
+    this.amenitiesForm.patchValue({
+      propertyId: row.propertyId ? row.propertyId : '',
+      propertyName: row.propertyName ? row.propertyName : '',
+      wifi: row.wifi === "Yes" ?  true : false,
+      hairDryer: row.hairDryer === "Yes" ?  true : false,
+      iron: row.iron === "Yes" ?  true : false,
+      heating: row.heating === "Yes" ?  true : false,
+      carbonMonoxideAlarm: row.carbonMonoxideAlarm === "Yes" ?  true : false,
+      laptopSpace: row.laptopSpace === "Yes" ?  true : false,
+      hangers: row.hangers === "Yes" ?  true : false,
+      essentials: row.essentials === "Yes" ?  true : false,
+      fireExtin: row.fireExtin === "Yes" ?  true : false,
+      firstAidKit: row.firstAidKit === "Yes" ?  true : false,
     });
     this.selectedRowData = row;
   }
@@ -156,13 +151,15 @@ export class AmenitiesComponent implements OnInit {
     });
   }
   deleteRow(row) {
-    this.data = this.arrayRemove(this.data, row.id);
-    this.showNotification(
-      'bg-red',
-      'Delete Record Successfully',
-      'bottom',
-      'right'
-    );
+   this.amenitiesService.deleteAmenities(row.hotelAmenId).subscribe((response: any) => {
+     this.showNotification(
+         'bg-red',
+         'Delete Record Successfully',
+         'bottom',
+         'right'
+     );
+     this.loadAmenities();
+   });
   }
   arrayRemove(array, id) {
     return array.filter(function (element) {
@@ -189,6 +186,7 @@ export class AmenitiesComponent implements OnInit {
       'right'
     );
   }
+
   onAddRowSave(form: FormGroup) {
     this.data.push(form.value);
     this.data = [...this.data];
@@ -202,6 +200,7 @@ export class AmenitiesComponent implements OnInit {
       'right'
     );
   }
+
   filterDatatable(event) {
     // get the value of the key pressed and make it lowercase
     const val = event.target.value.toLowerCase();
@@ -226,10 +225,11 @@ export class AmenitiesComponent implements OnInit {
     // whenever the filter changes, always go back to the first page
     this.table.offset = 0;
   }
+
   getId(min, max) {
-    // min and max included
     return Math.floor(Math.random() * (max - min + 1) + min);
   }
+
   openSnackBar(message: string) {
     this._snackBar.open(message, '', {
       duration: 2000,
@@ -238,6 +238,7 @@ export class AmenitiesComponent implements OnInit {
       panelClass: ['bg-red'],
     });
   }
+
   showNotification(colorName, text, placementFrom, placementAlign) {
     this._snackBar.open(text, '', {
       duration: 2000,
@@ -246,9 +247,41 @@ export class AmenitiesComponent implements OnInit {
       panelClass: colorName,
     });
   }
+
+  onSubmitAmenities() {
+    if (this.amenitiesForm.invalid) {
+      return;
+    }
+    const formValue = {
+      propertyId: this.amenitiesForm.value.propertyId,
+      propertyName: this.amenitiesForm.value.propertyName,
+      wifi: this.amenitiesForm.value.wifi ? "Yes" : "No",
+      hairDryer: this.amenitiesForm.value.hairDryer ? "Yes" : "No",
+      iron: this.amenitiesForm.value.iron ? "Yes" : "No",
+      heating: this.amenitiesForm.value.heating ? "Yes" : "No",
+      carbonMonoxideAlarm: this.amenitiesForm.value.carbonMonoxideAlarm ? "Yes" : "No",
+      laptopSpace: this.amenitiesForm.value.laptopSpace ? "Yes" : "No",
+      hangers: this.amenitiesForm.value.hangers ? "Yes" : "No",
+      essentials: this.amenitiesForm.value.essentials ? "Yes" : "No",
+      fireExtin: this.amenitiesForm.value.fireExtin ? "Yes" : "No",
+      firstAidKit: this.amenitiesForm.value.firstAidKit ? "Yes" : "No",
+      propertyOwner: this.authService.currentUserValue.email
+    };
+    this.amenitiesService.addAmenities(formValue).subscribe((response: any) => {
+      this.modalService.dismissAll();
+      this.loadAmenities();
+      this.amenitiesForm.reset();
+    });
+  }
+
+  checkboxChange(source: MatCheckbox, checked: boolean) {
+    source.value = checked ? "true" : "false";
+    this.amenitiesForm.updateValueAndValidity();
+    console.log(this.amenitiesForm.value);
+  }
 }
 export interface selectRowInterface {
-  img: String;
-  firstName: String;
-  lastName: String;
+  img: string;
+  firstName: string;
+  lastName: string;
 }

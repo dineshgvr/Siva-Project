@@ -16,7 +16,7 @@ export class PropertyDetailsService {
   addHotelProperty(formValue: any): Observable<any> {
     const httpOptions = {
       headers: new HttpHeaders({'Content-Type': 'application/json'})
-    }
+    };
 
     return this.httpClient.post('http://roomstoinn.com:9090/addHotelInfo', JSON.stringify(formValue), httpOptions);
   }

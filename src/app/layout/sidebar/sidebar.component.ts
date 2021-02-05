@@ -31,12 +31,13 @@ export class SidebarComponent implements OnInit, OnDestroy {
   headerHeight = 60;
   routerObj = null;
   currentRoute: string;
+
   constructor(
     @Inject(DOCUMENT) private document: Document,
     private renderer: Renderer2,
     public elementRef: ElementRef,
-    private authService: AuthService,
-    private router: Router
+    public authService: AuthService,
+    private router: Router,
   ) {
     const body = this.elementRef.nativeElement.closest('body');
     this.routerObj = this.router.events.subscribe((event) => {

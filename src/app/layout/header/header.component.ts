@@ -9,6 +9,7 @@ import {
 } from '@angular/core';
 import { ConfigService } from 'src/app/config/config.service';
 import { RightSidebarService } from 'src/app/core/service/rightsidebar.service';
+import {CookieService} from "ngx-cookie-service";
 const document: any = window.document;
 
 @Component({
@@ -24,7 +25,8 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     private renderer: Renderer2,
     public elementRef: ElementRef,
     private dataService: RightSidebarService,
-    private configService: ConfigService
+    private configService: ConfigService,
+    private cookieService: CookieService
   ) {}
   notifications: any[] = [
     {
@@ -173,4 +175,9 @@ export class HeaderComponent implements OnInit, AfterViewInit {
         .currentStatus._isScalar)
     );
   }
+
+    logOut() {
+      this.cookieService.delete('loggedInUserData');
+      window.location.href = 'http://localhost:4200/search-room/';
+    }
 }
