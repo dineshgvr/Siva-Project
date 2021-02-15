@@ -19,33 +19,22 @@
         <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:github/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3664662-b6a7-4313-96d9-a0b770d4d741" name="Default Changelist" comment="Dinesh - Updated RoomsToInn project with running mode">
+    <list default="true" id="d3664662-b6a7-4313-96d9-a0b770d4d741" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/amenities/amenities.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/amenities/amenities.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/amenities/amenities.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/amenities/amenities.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/core/service/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/core/service/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/dashboard/main/main.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/main/main.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout/header/header.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layout/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout/sidebar/sidebar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout/sidebar/sidebar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout/sidebar/sidebar.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/property-details/property-details-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/property-details/property-details-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/property-details/property-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/property-details/property-details.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/property-details/property-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/property-details/property-details.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/property-details/property-details.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/property-details/property-details.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/room-details/room-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/room-details/room-details.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/room-details/room-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/room-details/room-details.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/amenities/amenities.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/amenities/amenities.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/property-details/property-details.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/property-details/property-details.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/material.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/material.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,6 +128,10 @@
       <workItem from="1611495122470" duration="253000" />
       <workItem from="1612026361888" duration="5380000" />
       <workItem from="1612068548438" duration="51000" />
+      <workItem from="1612540597362" duration="1168000" />
+      <workItem from="1612717857559" duration="43000" />
+      <workItem from="1613228549822" duration="1149000" />
+      <workItem from="1613407156817" duration="63000" />
     </task>
     <task id="LOCAL-00001" summary="Dinesh - Updated RoomsToInn project with running mode">
       <created>1610264289930</created>
@@ -154,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610265187655</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Dinesh - Updated RoomsToInn project with running mode">
+      <created>1612540745782</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1612540745782</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +165,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="github/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -177,10 +189,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="Dinesh - Updated RoomsToInn project with running mode" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1461" y="28" width="1285" height="862" key="CommitChangelistDialog2" timestamp="1612031171953">
-      <screen x="1280" y="-40" width="1920" height="1011" />
+    <state x="1461" y="31" width="1285" height="862" key="CommitChangelistDialog2" timestamp="1612540745317">
+      <screen x="1280" y="-40" width="1920" height="1057" />
     </state>
     <state x="1461" y="28" key="CommitChangelistDialog2/1280.-40.1920.1011/0.23.1280.777@1280.-40.1920.1011" timestamp="1612031171953" />
+    <state x="1461" y="31" key="CommitChangelistDialog2/1280.-40.1920.1057/0.23.1280.731@1280.-40.1920.1057" timestamp="1612540745317" />
     <state x="1461" y="139" width="1285" height="862" key="CommitChangelistDialog2/1280.71.1920.1005/0.23.1280.777@1280.71.1920.1005" timestamp="1610265187468" />
     <state x="1734" y="142" key="CommitChangelistDialog2/1280.71.1920.1057/0.23.1280.725@1280.71.1920.1057" timestamp="1610264289561" />
     <state x="1850" y="388" width="963" height="386" key="Github.ShareDialog" timestamp="1610264938528">
@@ -212,9 +225,10 @@
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state x="171" y="24" key="SettingsEditor/0.23.1280.725@0.23.1280.725" timestamp="1610122058257" />
-    <state x="1840" y="301" key="Vcs.Push.Dialog.v2" timestamp="1610265194486">
-      <screen x="1280" y="71" width="1920" height="1005" />
+    <state x="1840" y="202" key="Vcs.Push.Dialog.v2" timestamp="1612540795951">
+      <screen x="1280" y="-40" width="1920" height="1057" />
     </state>
+    <state x="1840" y="202" key="Vcs.Push.Dialog.v2/1280.-40.1920.1057/0.23.1280.731@1280.-40.1920.1057" timestamp="1612540795951" />
     <state x="1840" y="301" key="Vcs.Push.Dialog.v2/1280.71.1920.1005/0.23.1280.777@1280.71.1920.1005" timestamp="1610265194486" />
     <state x="1840" y="313" key="Vcs.Push.Dialog.v2/1280.71.1920.1057/0.23.1280.725@1280.71.1920.1057" timestamp="1610264496240" />
     <state x="323" y="126" width="634" height="514" key="find.popup" timestamp="1610815603325">

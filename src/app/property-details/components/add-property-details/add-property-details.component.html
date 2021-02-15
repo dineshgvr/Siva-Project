@@ -1,0 +1,119 @@
+
+<div [formGroup]="propertyForm">
+    <div class="modal-header editRowModal">
+        <h4 class="modal-title" id="modal-basic-title">
+            <div class="modal-header ">
+                <div class="modal-about">
+                    <div class="font-weight-bold p-t-10 font-17">
+                        {{isAddOrView}} Property</div>
+                </div>
+            </div>
+        </h4>
+    </div>
+    <div class="modal-body">
+        <form class="register-form" [formGroup]="propertyForm">
+            <div class="input-field col s12 d-none">
+            </div>
+            <div class="input-field col s12 d-none">
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <mat-label>Property Name</mat-label>
+                        <input matInput formControlName="propertyName" required>
+                        <mat-error *ngIf="propertyForm.get('propertyName').hasError('required')">
+                            First name is required
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <mat-label>No Of guest</mat-label>
+                        <input matInput formControlName="guest" required>
+                        <mat-icon matSuffix>face</mat-icon>
+                        <mat-error *ngIf="propertyForm.get('guest').hasError('required')">
+                            No of guest is required
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <mat-label>No of Bedroom</mat-label>
+                        <input matInput formControlName="bedRoom" required>
+                        <mat-error *ngIf="propertyForm.get('bedRoom').hasError('required')">
+                            No of Bedroom is required
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <mat-label>No Of Bed</mat-label>
+                        <input matInput formControlName="beds">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <mat-label>No Of Bathroom</mat-label>
+                        <input matInput formControlName="bathRoom" required>
+                        <mat-error *ngIf="propertyForm.get('bathRoom').hasError('required')">
+                            No Of Bathroom is required
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <mat-label>Address</mat-label>
+                        <textarea matInput formControlName="address" required></textarea>
+                        <mat-error *ngIf="propertyForm.get('address').hasError('required')">
+                            Address is required
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mb-2">
+                    <div class="example-container">
+                        <mat-form-field class="example-full-width" appearance="outline">
+                            <mat-label>State</mat-label>
+                            <mat-select formControlName = "state" required>
+                                <mat-option *ngFor="let state of ['CO']" [value]="state">
+                                    {{state}}
+                                </mat-option>
+                            </mat-select>
+                            <mat-error *ngIf="propertyForm.get('state').hasError('required')">
+                                State is required
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mb-2">
+                    <div class="example-container">
+                        <mat-form-field class="example-full-width" appearance="outline" >
+                            <mat-label>Country</mat-label>
+                            <mat-select formControlName = "country" required>
+                                <mat-option *ngFor="let country of countryList" [value]="country">
+                                    {{country}}
+                                </mat-option>
+                            </mat-select>
+                            <mat-error *ngIf="propertyForm.get('country').hasError('required')">
+                                Country is required
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
+                    <button class="mr-3" mat-raised-button
+                            color="primary" (click)="onSubmitProperty()">Submit</button>
+                    <button type="button" mat-button data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

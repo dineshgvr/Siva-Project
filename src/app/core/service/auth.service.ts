@@ -17,14 +17,14 @@ export class AuthService {
   constructor(private http: HttpClient,
               private cookieService: CookieService,
               private router: Router) {
-    this.currentUserSubject = new BehaviorSubject<User>(
-      JSON.parse(cookieService.get('loggedInUserData'))
-    );
-    this.currentUser = this.currentUserSubject.asObservable();
+    // this.currentUserSubject = new BehaviorSubject<User>(
+    //   JSON.parse(cookieService.get('loggedInUserData'))
+    // );
+    // this.currentUser = this.currentUserSubject.asObservable();
   }
 
   public get currentUserValue(): any {
-    return this.currentUserSubject.value;
+    return null; // this.currentUserSubject.value;
   }
 
   login(username: string, password: string) {

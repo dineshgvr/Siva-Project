@@ -13,8 +13,8 @@
             </div>
           </div>
           <div class="profile-usertitle">
-            <div class="sidebar-userpic-name">{{authService.currentUserValue.firstname}} {{authService.currentUserValue.lastname}} </div>
-            <div class="profile-usertitle-job ">{{authService.currentUserValue.role}} </div>
+            <div class="sidebar-userpic-name">{{authService.currentUserValue?.firstname}} {{authService.currentUserValue?.lastname}} </div>
+            <div class="profile-usertitle-job ">{{authService.currentUserValue?.role}} </div>
           </div>
           <div class="sidebar-userpic-btn">
             <a mat-icon-button disabled routerLink="extra-pages/profile" matTooltip="Profile"

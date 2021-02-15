@@ -19,6 +19,7 @@ export class PropertyDetailsComponent implements OnInit {
   public isAddOrView = 'Add';
   public selectedPropertyId: string ;
 
+
   @ViewChild('roleTemplate', { static: true }) roleTemplate: TemplateRef<any>;
   @ViewChild(DatatableComponent, { static: false }) table: DatatableComponent;
   rows = [];

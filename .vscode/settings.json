@@ -1,0 +1,7 @@
+{
+    "editor.fontSize": 16,
+    "editor.letterSpacing": 1,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Operator Mono, Consolas, 'Courier New', monospace",
+    "editor.fontWeight": "bold"
+}
