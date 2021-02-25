@@ -30,7 +30,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3664662-b6a7-4313-96d9-a0b770d4d741" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/core/service/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/core/service/auth.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layout/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout/header/header.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layout/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout/header/header.component.ts" afterDir="false" />
@@ -191,6 +190,10 @@
       <screen x="0" y="23" width="1280" height="716" />
     </state>
     <state x="324" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1280.716@0.23.1280.716" timestamp="1614274434875" />
+    <state x="387" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614275926706">
+      <screen x="0" y="23" width="1280" height="716" />
+    </state>
+    <state x="387" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.716@0.23.1280.716" timestamp="1614275926706" />
     <state x="323" y="127" width="734" height="582" key="find.popup" timestamp="1614274484498">
       <screen x="0" y="23" width="1280" height="716" />
     </state>
