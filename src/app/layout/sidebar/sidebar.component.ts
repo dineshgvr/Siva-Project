@@ -31,6 +31,8 @@ export class SidebarComponent implements OnInit, OnDestroy {
   headerHeight = 60;
   routerObj = null;
   currentRoute: string;
+  public currentUserName: string;
+  public currentRole: string;
   constructor(
     @Inject(DOCUMENT) private document: Document,
     private renderer: Renderer2,
@@ -90,7 +92,10 @@ export class SidebarComponent implements OnInit, OnDestroy {
     }
   }
   ngOnInit() {
+    console.log(this.authService.currentUserValue);
     if (this.authService.currentUserValue) {
+      this.currentUserName = this.authService.currentUserValue.firstname + " " + this.authService.currentUserValue.lastname;
+      this.currentRole = this.authService.currentUserValue.role;
       this.sidebarItems = ROUTES.filter((sidebarItem) => sidebarItem);
     }
     this.initLeftSidebar();

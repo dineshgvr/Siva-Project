@@ -8,7 +8,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 export class SingInService {
   public loggedInUser = new BehaviorSubject('');
   public loggedInUserObs$  = this.loggedInUser.asObservable();
-  
+
   constructor(private httpClient: HttpClient) { }
 
   loginAuthenticate(loginCredentials: any): Observable<any> {
@@ -18,9 +18,7 @@ export class SingInService {
     });
   }
 
-
   setLoggedInUserInfo(user: any) {
-    this.loggedInUser.next(user)
+    this.loggedInUser.next(user);
   }
-  
 }

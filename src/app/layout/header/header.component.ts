@@ -9,6 +9,7 @@ import {
 } from '@angular/core';
 import { ConfigService } from 'src/app/config/config.service';
 import { RightSidebarService } from 'src/app/core/service/rightsidebar.service';
+import {AuthService} from "../../core/service/auth.service";
 const document: any = window.document;
 
 @Component({
@@ -24,7 +25,8 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     private renderer: Renderer2,
     public elementRef: ElementRef,
     private dataService: RightSidebarService,
-    private configService: ConfigService
+    private configService: ConfigService,
+    private authService: AuthService
   ) {}
   notifications: any[] = [
     {
@@ -172,5 +174,9 @@ export class HeaderComponent implements OnInit, AfterViewInit {
       (this.dataService.currentStatus._isScalar = !this.dataService
         .currentStatus._isScalar)
     );
+  }
+
+  public logOut() {
+      this.authService.logout();
   }
 }

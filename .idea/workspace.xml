@@ -19,16 +19,36 @@
         <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:github/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3664662-b6a7-4313-96d9-a0b770d4d741" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/core/service/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/core/service/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout/sidebar/sidebar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout/sidebar/sidebar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout/sidebar/sidebar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/signIn/sing-in.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/signIn/sing-in.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="ProjectId" id="1mnGaXdPzaT7r7BjeddbwpPm9qV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -167,14 +187,20 @@
       <screen x="1280" y="71" width="1920" height="1057" />
     </state>
     <state x="1840" y="313" key="Vcs.Push.Dialog.v2/1280.71.1920.1057/0.23.1280.725@1280.71.1920.1057" timestamp="1610264496240" />
-    <state x="1765" y="224" width="950" height="750" key="find.popup" timestamp="1610207779158">
-      <screen x="1280" y="71" width="1920" height="1057" />
+    <state x="324" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1614274434875">
+      <screen x="0" y="23" width="1280" height="716" />
     </state>
+    <state x="324" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1280.716@0.23.1280.716" timestamp="1614274434875" />
+    <state x="323" y="127" width="734" height="582" key="find.popup" timestamp="1614274484498">
+      <screen x="0" y="23" width="1280" height="716" />
+    </state>
+    <state x="323" y="127" width="734" height="582" key="find.popup/0.23.1280.716@0.23.1280.716" timestamp="1614274484498" />
     <state x="323" y="128" width="633" height="514" key="find.popup/0.23.1280.725@0.23.1280.725" timestamp="1610202081272" />
     <state x="1765" y="224" width="950" height="750" key="find.popup/1280.71.1920.1057/0.23.1280.725@1280.71.1920.1057" timestamp="1610207779158" />
-    <state x="1738" y="142" width="1005" height="986" key="search.everywhere.popup" timestamp="1610207770050">
-      <screen x="1280" y="71" width="1920" height="1057" />
+    <state x="305" y="71" width="838" height="668" key="search.everywhere.popup" timestamp="1614273886312">
+      <screen x="0" y="23" width="1280" height="716" />
     </state>
+    <state x="305" y="71" width="838" height="668" key="search.everywhere.popup/0.23.1280.716@0.23.1280.716" timestamp="1614273886312" />
     <state x="305" y="72" width="670" height="676" key="search.everywhere.popup/0.23.1280.725@0.23.1280.725" timestamp="1610202085802" />
     <state x="1738" y="142" width="1005" height="986" key="search.everywhere.popup/1280.71.1920.1057/0.23.1280.725@1280.71.1920.1057" timestamp="1610207770050" />
   </component>
